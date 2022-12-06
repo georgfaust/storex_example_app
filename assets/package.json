@@ -1,6 +1,6 @@
 {
   "name": "storextest",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "esbuild": "^0.15.18",
-		"storex": "file:../deps/storex"
+    "storex": "file:../deps/storex"
   }
 }

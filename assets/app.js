@@ -12,6 +12,8 @@ const store = new Storex({
 
 var inc = document.getElementById("inc");
 var dec = document.getElementById("dec");
+var set = document.getElementById("set");
 
 inc.addEventListener("click", () => store.commit("inc"));
 dec.addEventListener("click", () => store.commit("dec"));
+set.addEventListener("click", () => store.commit("set", 0));
