@@ -1,23 +1,22 @@
 # Storex Example App
 
+## Prerequisites
+
+- node >= 18
+- Elixir >= 1.14
+
+## Getting Started
+
 ```
 $ mix deps.get
 ```
 
-There are vanilla and solid examples (select an app in `config/config.exs`).
-
-For vanilla:
-
-```
-assets/vanilla$ npm i
-assets/vanilla$ sh ./build.sh
-```
-
-For solid:
+There are vanilla and solid examples.
+Select an app in `config/config.exs` and then:
 
 ```
-assets/solid$ npm i
-assets/solid$ node build.js
+assets/<selected-app>$ npm i
+assets/<selected-app>$ sh ./build.sh
 ```
 
 Then run the server:
