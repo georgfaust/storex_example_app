@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "esbuild": "^0.15.18",
-    "storex": "file:../deps/storex"
+    "storex": "file:../../deps/storex"
   }
 }

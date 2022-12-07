@@ -28,5 +28,5 @@ simple_plug_static-*.tar
 .elixir_ls/
 
 # www
-/assets/node_modules/**
-/assets/www/index.js
+/assets/*/node_modules/**
+/assets/*/www/index.js
