@@ -1,0 +1,1 @@
+./node_modules/.bin/esbuild app.js --outfile=www/main.js --bundle

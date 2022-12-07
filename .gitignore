@@ -29,4 +29,5 @@ simple_plug_static-*.tar
 
 # www
 /assets/*/node_modules/**
-/assets/*/www/index.js
+/assets/*/www/main.js
+/assets/*/www/main.css
