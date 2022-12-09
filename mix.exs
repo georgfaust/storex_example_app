@@ -23,7 +23,8 @@ defmodule SimplePlugStatic.MixProject do
       {:plug_cowboy, "~> 2.6"},
       {:plug_socket, "~> 0.1.0"},
       {:storex, "~> 0.2.3"},
-      {:jason, "~> 1.3"}
+      {:jason, "~> 1.3"},
+      {:uuid, "~> 1.1"}
     ]
   end
 end

@@ -3,7 +3,7 @@ import { from, For } from "solid-js";
 import Storex from "storex";
 
 const store = new Storex({
-  store: "ExampleApp.Store.Todos",
+  store: "ExampleApp.Store.TodoList",
   params: {},
 });
 
@@ -12,7 +12,7 @@ function App() {
 
   const state = from(store);
 
-  const addTodo = (text) => store.commit("add_todo", text);
+  const addTodo = (text) => store.commit("add", text);
 
   return (
     <>
