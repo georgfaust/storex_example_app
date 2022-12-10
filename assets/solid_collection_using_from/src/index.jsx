@@ -1,6 +1,5 @@
 import { render } from "solid-js/web";
-import { For } from "solid-js";
-import { createStore, reconcile } from "solid-js/store";
+import { from, For } from "solid-js";
 
 import Storex from "storex";
 
@@ -12,14 +11,8 @@ const store = new Storex({
 const App = () => {
   let input;
 
-  const [todos, setTodos] = createStore([]);
-
-  store.subscribe((update) => {
-    if (update) {
-			let update_ = update.map((item) => ({...item}));
-			setTodos(reconcile(update_));
-    }
-  });
+  // adding new elements works but toggling does not
+  const todos = from(store);
 
   const addTodo = (text) => store.commit("add", text);
   const toggleTodo = (id) => store.commit("toggle", id);
@@ -38,7 +31,7 @@ const App = () => {
           Add Todo
         </button>
       </div>
-      <For each={todos}>
+      <For each={todos()}>
         {(todo) => {
           const { id, text } = todo;
           console.log(`Creating ${text}`);
