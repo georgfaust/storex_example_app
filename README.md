@@ -24,3 +24,5 @@ Then run the server:
 ```
 $ mix run --no-halt
 ```
+
+and open `http://localhost:4000/`

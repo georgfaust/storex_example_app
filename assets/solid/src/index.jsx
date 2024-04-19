@@ -17,6 +17,7 @@ function Counter() {
 
   return (
     <>
+      <div>count: {state()?.counter}</div>
       <button onClick={() => store.commit("inc")}>inc</button>
       <button onClick={() => store.commit("dec")}>dec</button>
       <button onClick={() => store.commit("set", 0)}>set 0</button>

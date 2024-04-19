@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "esbuild": "^0.15.18",
+    "esbuild": "^0.20.2",
     "storex": "file:../../deps/storex"
   }
 }

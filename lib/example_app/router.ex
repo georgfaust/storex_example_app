@@ -5,8 +5,7 @@ defmodule ExampleApp.Router do
   use PlugSocket
 
   plug(Plug.Static, from: "assets/#{@app}/www", at: "/")
-
-  socket("/storex", Storex.Socket.Handler)
+  plug Storex.Plug, path: "/storex"
 
   plug(:match)
   plug(:dispatch)
