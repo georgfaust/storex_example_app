@@ -1,6 +1,7 @@
 # Storex Example Apps
 
-https://www.solidjs.com + https://github.com/nerdslabs/storex examples.
+- Vanilla + https://github.com/nerdslabs/storex examples.
+- https://www.solidjs.com + https://github.com/nerdslabs/storex examples.
 
 ## Prerequisites
 
